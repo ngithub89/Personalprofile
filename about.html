@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Diya Adhikari</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f3f4f6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            line-height: 1.8;
+        }
+
+        header {
+            background-color: #242424;
+            color: #ffffff;
+            padding: 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: transform 0.3s ease;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #4a90e2;
+            transform: translateY(-3px);
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 120px auto 0 auto;
+            padding: 40px 20px;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-top: 80px;
+        }
+
+        .firstsection .leftsection {
+            max-width: 600px;
+            margin-right: 40px;
+        }
+
+        .firstsection h1 {
+            font-size: 3rem;
+            margin-bottom: 30px;
+            color: #333;
+            line-height: 1.2;
+        }
+
+        .firstsection h1 span {
+            color: #4a90e2;
+        }
+
+        .firstsection p {
+            font-size: 1.3rem;
+            color: #555;
+            margin-bottom: 30px;
+        }
+
+        .firstsection .rightsection img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .firstsection .rightsection img:hover {
+            transform: scale(1.05);
+        }
+
+        .secondsection,
+        .thirdsection {
+            max-width: 800px;
+            margin: 80px auto;
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 60px;
+        }
+
+        .secondsection p,
+        .thirdsection p {
+            font-size: 1.3rem;
+            color: #333;
+            margin-bottom: 30px;
+            line-height: 1.8;
+        }
+
+        /* Enhanced third section with image gallery */
+        .thirdsection {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .thirdsection p {
+            max-width: 600px;
+        }
+
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .fourthsection {
+            max-width: 800px;
+            margin: 80px auto;
+            padding: 40px;
+            background-color: #f7f7f7;
+            border-left: 8px solid #4a90e2;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 60px;
+        }
+
+        .fourthsection h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #4a90e2;
+        }
+
+        .fourthsection p {
+            font-size: 1.2rem;
+            color: #333;
+            line-height: 1.8;
+        }
+
+        .quote-section {
+            background: linear-gradient(135deg, #4a90e2 0%, #4ac0e0 100%);
+            color: white;
+            padding: 60px;
+            text-align: center;
+            margin-top: 60px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .quote-section p {
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        footer {
+            background-color: #242424;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+            font-size: 0.9rem;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Diya Adhikari</div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                <h1>About <span>Me</span></h1>
+                <p>I am a high school student with a passion for understanding the human mind and behavior. Although I am currently studying in school, I am deeply interested in pursuing a career as a psychiatrist. I am fascinated by mental health and am dedicated to learning how to help others navigate their mental well-being. I believe in the power of empathy and communication in making a positive impact on people's lives.</p>
+            </div>
+
+            <div class="rightsection">
+                <img src="dev.png" alt="Diya Adhikari">
+            </div>
+        </section>
+
+        <section class="secondsection">
+            <p>As I continue my studies, I am focused on building a strong foundation in psychology and related subjects. My goal is to gain a deep understanding of mental health issues and develop the skills needed to support individuals in their journey towards emotional and psychological well-being. I am committed to exploring various aspects of mental health and learning from professionals in the field.</p>
+        </section>
+
+        <section class="thirdsection">
+            <p>Outside of academics, I engage in activities that enhance my understanding of human behavior and mental health. Whether it's through volunteering, participating in relevant workshops, or reading about the latest research, I strive to broaden my knowledge and skills. These experiences help me grow personally and prepare for a future career in psychiatry.</p>
+        </section>
+
+        <section class="fourthsection">
+            <h2>Looking Ahead</h2>
+            <p>My aspiration is to pursue higher education in psychology and psychiatry. I aim to contribute to the field by addressing mental health challenges and supporting individuals in achieving their best possible mental well-being. I am excited about the opportunities to make a meaningful difference in people's lives through compassionate and informed psychiatric care.</p>
+        </section>
+
+        <section class="quote-section">
+            <p>"The best way to predict the future is to create it." – Peter Drucker</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Diya Adhikari. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
